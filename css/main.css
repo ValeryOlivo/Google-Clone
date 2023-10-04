@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+}
+
+/**********************************************************************************************************************************************************************/
+/*Navegacion*/
+
+header{
+    /*witch -- ancho height -- alto*/
+    width: 100%;  
+    height: 60px;  
+}
+
+/*Acceder a nav a traves de header*/
+
+header nav{
+    /* Nos permite mover o habilitar propiedades para poder mover elementos o agregra propiedades extras */
+     display: flex;
+     /*Envia el contenido al final de la seccion
+     Justificar hacia la derecha*/
+     justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    /* No importa que tan alta sea nuestra caja, este valor se debe ajustar en automatico*/
+    height: auto;
+    /*Para eliminar los puntos de las listas*/
+    list-style: none;
+    /*Nos ayuda a poner propiedades extras y el elemento sea flexible*/
+    display: flex;
+    /*Centrar los elementos de la lista en base al elemento nav-right-section*/
+    justify-content: center;
+    /*Nos coloca los elementos en manera verticalmente como le indiquemos. 
+    Centrando verticalmente*/
+    align-items: center;
+
+
+
+}
+
+a{
+    /*Quitamos el subrayado de las anclas */
+    text-decoration: none;
+}
+
+/*Anclas dentro del nav para agregar espacio entre los elementos*/
+
+nav .nav-right-section a{
+    /*Color del texto*/
+    color: rgba(0,0,0,0.87);
+    margin-right: 20px;
+}
+
+/*Icono de menu*/
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-size: contain;
+    width: 20px; ;
+    height: 20px ;
+}
+
+/*Imagen de usuario*/
+
+nav .nav-right-section img{
+
+    /*Redondear bordes de la fotografia*/
+    border-radius: 100%;
+    width: 35px;
+    margin-left: 20px;
+}
+
+main{
+
+    margin-top: 80px;
+    /*Centramos elementos*/
+    text-align:center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin-bottom: 48px;
+    /*Centrado absoluto por los margenes automaticos 
+    Horizontal y vertical*/
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 128px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+main .main-input-container{
+    width: 520px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+}
+
+main .main-input input{
+
+    height: 30px;
+    border:none;
+    /*outline quita el borde de un input al dar click */
+    outline: none;
+    /*Le da tamaño al input*/
+    width: 430px;
+}
+
+
+/*Efecto que se agrega al input cuando se pase el mouse sobre el */
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    /* Para esta propiedad se tienen los siguientes elementos. Esta propiedad acepta hasta 
+    valor 1:  desplazamiento horizontal valor 2 : desplazamiento vertical 
+    valor 3: desenfoque
+    valor 4: expansion de la sombra
+    color*/
+    box-shadow: 0 1px 6px 0  #20212447;
+}
+
+main .main-input .search-icone{
+
+    background-image:  url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    /*Propiedad para que no se repita*/
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    padding-left: 10px;
+    margin-right: 1px;
+
+}
+
+main .main-input .micro-icone{
+
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+    margin-left: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icone{
+
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 30px;
+    height: 20px;
+    padding-left: 15px;
+    margin-left: 15px; ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-buttons{
+    
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+main .main-buttons div{
+
+    /*Hace que los botones esten en la misma linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px ;
+    /*Primer valor es de las partes superior e inferior y el segundo valor es para los laterales*/
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+
+    box-shadow:  0 1px 1px 0 #20212447;
+    border: 1px solid #dadce0;
+    color: black;
+
+}
+
+footer{
+    position: absolute; /*Posicion del footer*/
+    bottom: 0;
+    width: 100%; /*Ancho del footer, para que abarque toda la pantalla*/
+    background-color: #edede9; /* Color de fondo del pie de página */
+    padding: 10px; /* Espaciado interno más delgado para el pie de página */
+    height: auto; /* Altura más delgada para el pie de página */
+}
+
+/*Primer elemento del footer*/
+
+footer .first-part-footer{
+
+    font-family: arial; /*Fuente de la letra */
+    font-size: 15px; /*Tamaño de la letra */
+    font-weight: 100; /*Para hacer mas delgada la letra */
+    color: #70757a; /*Color de la letra */
+    display: flex; /*Para darle propiedades extras*/
+    padding: 15px ; /*Margen del padding*/
+    margin-left: 25px; /*Margen izquierdo */
+    height: 5px; /* Tamaño de la seccion*/
+    justify-content: flex-start; /*Posicion del  texto horizontal*/
+    align-items: center; /*Posicion del texto vertical*/
+}
+
+/*Segundo elemento del footer division*/
+
+footer .second-part-footer{
+    border-top: 1px solid #999;  /*Margen de division del footer segunda seccion, solido, una linea gris*/
+
+}
+
+
+/*Segundo elemento del footer (listas no ordenadas)*/
+
+footer .first-list-footer li {
+ display: inline-block; /*Colocar las listas en horizontal*/
+ list-style: none; /*Quitar los puntos de las listas*/
+ font-family: arial; /*Fuente de la letra */
+ font-size: 15px; /*Tamaño de la letra */
+}
+
+/*Separacion entre elementos de las listas*/
+
+footer .first-list-footer .separation {
+    margin-left: 600px;   /*Margen izquierdo de un elemento*/
+    }
